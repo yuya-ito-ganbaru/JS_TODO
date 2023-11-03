@@ -1,0 +1,103 @@
+/*全体*/
+.wrapper {
+    max-width: width 600px;
+    margin: 0 auto;
+    color: #666;
+}
+#header {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+#main-wrap {
+    margin-bottom: 1.5rem;
+}
+
+/*入力*/
+#input-wrap {
+    margin: 0 auto;
+    width: 80%;
+}
+#input-wrap input {
+    width: 40%;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+/*リスト*/
+#main-wrap {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    min-height: 120px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    padding: 0.8rem 2rem;
+}
+
+#main-wrap ul {
+    padding-inline-start: 0;
+}
+
+#main-wrap li {
+    text-align: left;
+    list-style-type: none;
+    border-bottom: 1px dashed #aaa;
+    padding: 0.8rem 0;
+    display: flex;
+    line-height: 32px;
+}
+
+#main-wrap p {
+    width: 60%;
+}
+#main-wrap p.line-through {
+    text-decoration: line-through;
+}
+
+/*ボタン*/
+button {
+    height: 32px;
+
+    cursor: pointer;
+    background: #B78D4A;
+    color: #fff;
+    border: 1xp solid #B78D4A;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.2rem 1.5rem;
+    margin-bottom: 0.5rem;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+}
+
+button:hover {
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+}
+button.disabled {
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+button.deleteTask-button {
+    margin-bottom: 1.5rem;
+}
+
+.end-button,.delete-button {
+    margin-bottom: 0;
+    padding: 0.2rem 1rem;
+}
+
+.end-button {
+    margin-right: 0.4rem;
+}
