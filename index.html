@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODOリスト</title>
+    <title>TODOリスト・カレンダー</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./calendar/style.css">
 </head>
 <body>
     <div style="display: flex;" class="wrapper">
         <div>
-            <iframe style="width: 300px; height: 450px;" src="./calendar/index.html"></iframe>
+            <!--xxxx年xx月を表示-->
+            <h1 id="header"></h1>
+
+            <!--ボタンクリックで月移動-->
+            <div id="next-prev-button">
+                <button id="prev" onclick="prev()">‹</button>
+                <button id="next" onclick="next()">›</button>
+            </div>
+
+            <!--カレンダー-->
+            <div id="calendar"></div>
         </div>
         <div>
             <h1 id="header">TODOリスト</h1>
-        <div id="input-wrap">
-            <input id="task-name" type="text" placeholder="タスク名を入力してください">
-            <button onclick="addTask()">タスクを追加</button>
-            <button class="deleteTask-button" onclick="deleteTask()">チェックしたタスクを削除</button>
-        </div>
-        <div id="main-wrap">
-            <form name="task_form">
-                <ul id="todo-list"></ul>
-            </form>
-        </div>
+            <div id="input-wrap">
+                <input id="task-name" type="text" placeholder="タスク名を入力してください">
+                <button onclick="addTask()">タスクを追加</button>
+                <button class="deleteTask-button" onclick="deleteTask()">チェックしたタスクを削除</button>
+            </div>
+            <div style="height: 200px;" id="main-wrap">
+                <form name="task_form">
+                    <ul id="todo-list"></ul>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./style.js"></script>
+    <script src="./calendar/style.js"></script>
 </body>
 </html>
